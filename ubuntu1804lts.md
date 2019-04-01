@@ -16,8 +16,12 @@ sudo vi /etc/ssh/sshd_config
 ssh-keygen -t rsa
 ```
 - 以下に作成される。
- 公開鍵：~/ssh/id_rsa.pub
- 秘密鍵：~/.ssh/id_rsa
+```sh
+#公開鍵
+~/ssh/id_rsa.pub
+#秘密鍵
+~/.ssh/id_rsa
+```
 - Macの場合、キーチェーンに登録
 ```sh
 ssh-add -K ~/.ssh/id_rsa
