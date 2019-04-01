@@ -38,7 +38,9 @@ chmod 700 .ssh
 chmod 600 .ssh/authorized_keys
 ```
 - 対象サーバーのauthorized_keysに追記
+```sh
 cat ~/.ssh/id_rsa.pub | ssh hogehoge@hogehoge.com 'cat >> .ssh/authorized_keys'
+```
 
 #### 確認
 #### パスワード認証の禁止設定
